@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios </title>
+</head>
+<body>
+    <form action="">
+        <h2>Entradas</h2>
+        <span>Texto </span> <input type="text" name="first_name">
+        <span>numero </span><input type="number" name="age">
+        <span>password</span><input type="password" name="password">
+        <span>fechas (noo todos)</span><input type="date" name="dob">
+        <span>color </span><input type="color" name="text_color">
+        <br>
+        <h2>radio</h2>
+        <p>La inclusión de los atributos "id" y "for" permite hacer clic en el texto de la etiqueta para cambiar las entradas.</p>
+        
+        <input type="radio" name="font" value="bold" id="bold">
+        <label for="bold"><strong>Negrita</strong></label>
+        <input type="radio" name="font" value="normal" id="normal">
+        <label for="normal">Normal</label>
+        <h2>Casilla de verificación</h2>
+        <input type="checkbox" name="accept" id="accept">
+        <label for="accept">Estoy de acuerdo</label>
+        <h2>Área de texto</h2>
+        <textarea name="comment" cols="20" rows="3"></textarea>
+        <h2>Seleccionar</h2>
+        <select name="snack">
+            <option value="1">Almonds</option>
+            <option value="2">Cheese and Crackers</option>
+            <option value="3">Pita and Hummus</option>
+            <option value="4">Pears</option>
+        </select>
+    </form>
+    <br>
+    <h2>Formulario común</h2>
+    <form action="/process" method="post">
+        <div>
+            <label>Nombre: </label>
+            <input type="text" name="name" 
+            placeholder="Your name..." >
+        </div>
+        <div>
+            <label>Email: </label>
+            <input type="text" name="email" 
+            placeholder="Your email..." >
+        </div>
+        <div>
+            <input type="checkbox" name="offers" 
+            id="offers" checked >
+            <label for="offers">Me gustaría 
+            recibir correos con ofertas.</label>
+        </div>
+        <input type="submit" value="Sign up" >
+    </form>
+    
+    <form action="" method="post">
+        <p>Input</p>
+        <input type="text" name="nombre" alt="nombre">
+        <input type="color" name="color">
+        <input type="date" name="fecha" id="">
+        <!-- los framework manejan de mejor manera el email -->
+        <input type="email" name="correo" id="" alt="correo"><br>
+        <!-- selecciona archivos -->
+        <input type="file" name="arch"><br>
+        <input type="password" name="pw"><br>
+        
+        <span>Check</span>
+        <input type="checkbox" name="opc1" id="">
+        <input type="checkbox" name="opc2" id="">
+        <input type="checkbox" name="opc3" id=""><br>
+        <span>Radio</span>
+        <!--   para relacionarlo debe usar el minsmo nombre-->
+        <input type="radio" name="opc_rad" id="">
+        <input type="radio" name="opc_rad" id="">
+        <input type="radio" name="opc_rad" id=""><br>
+        <span>Objeto select</span>
+        <select name="op_sele" id="">
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+            <option value="3">Opcion 3</option>
+        </select>
+        <p>botones sin accesion summit</p>
+        <!-- se asocia a un evento de JS -->
+        <button>boton prueba</button>
+        <span>botones summit</span>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- el div aun se usa, pero solo que no tenga semantica en el HMTL
+        normalemente menu 
+        si hay imagenes usar figure-->
+    <figure>
+        <img src="images.jfif" alt="" srcset="">
+    </figure>
+    
+    
+</body>
+</html>
